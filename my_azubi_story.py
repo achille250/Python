@@ -9,22 +9,28 @@ while True:
    user_response = []
    name_hold = input('What is your name: ')
    print(" You are welcome, " f'{name_hold.upper()}. You are about to embark on a thrilling adventure ')
-   place = input('Where do you live: ')
+   #place = input('Where do you live: ')
    
  # User provide different favourite course 
    while True:
-     course = input('What is your favourite course so far or Press "done" to finish : ')
-     if course=="done":
-         break
-     user_response.append(course)
+     country = input('Which country are you from: ')
+     city = input('What city do you live in: ') 
+     institute = input('What is the name of the training Institution? ')
+     course = input('What course are you being trained for? ')
+     duration = input('What is the duration of the program? ')
+     testify = input('In one word, What can you say about their training: ') 
+     user_end = input('Please type DONE: ')
+     break
+     user_response.append(user_end)
+
   # Creating story template
-   print(f"My name is {name_hold.upper()}.I live in {place.upper()} Here is my story: \n" )
-   print(f"I am currently enjoying the Cloud Engineering course at Azubi Africa. It has been an incredible learning journey so far ")
-   print(f"The instructors have been amazing ,I also want to thank all the fellow students who have been on this journey with me ")
-  # Displaying favorite course
-   print(f"My favorite course so far are : \n")
-   for course in user_response:
-    print(course.upper())
+   print('\n')
+   print("************************************************")
+   print(f"""My name is {name_hold.upper()}.I live in {city.upper()}, {country.upper()}. 
+I am currently running a {course} training program at {institute.upper()}.
+{institute.upper()} provides a comprehensive {duration} training which prepares me for job search, resume building not leaving out the core technical skills for {course}.
+The training is {testify}.""")
+
    print("************************************************")
    print("THE END")
    print("************************************************")
