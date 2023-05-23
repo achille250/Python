@@ -11,7 +11,7 @@ print (fruits[3:5])
 
 #fruits=("orange","mango","banana","sweer apple","Kiwi","cherry","water mellon")
 #fruits.insert(2,'strawbery')
-#print (fruits)
+#print (fruits)    
 
 #add to tuples
 fruits=("orange","mango","banana","sweer apple","Kiwi","cherry","water mellon")
